@@ -17,10 +17,10 @@ export default function BiodataForm({ biodata, setBiodata, setShowDownload }) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // if (!biodata.name || !biodata.dob || !biodata.gender) {
-    //   toast.error("Please fill in all required fields.");
-    //   return;
-    // }
+    if (!biodata.name || !biodata.dob || !biodata.gender) {
+      toast.error("Please fill in all required fields.");
+      return;
+    }
     try {
       // Logic for save/upload remains the same
       setShowDownload(true);
