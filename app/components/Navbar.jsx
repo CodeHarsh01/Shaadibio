@@ -17,7 +17,7 @@ function Navbar() {
 
             <nav className='flex justify-between items-center p-4 px-6 md:px-12 shadow-lg bg-white relative z-50'>
                 <Link href='/'>
-                    <img src="/assets/logo.png" alt="Logo" className='w-28 md:w-34 cursor-pointer' />
+                    <img src="/assets/Logo.png" alt="Logo" className='w-28 md:w-34 cursor-pointer' />
                 </Link>
 
                 <ul className='hidden md:flex gap-8 text-lg font-medium text-gray-700'>

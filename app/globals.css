@@ -1,10 +1,31 @@
 @import "tailwindcss";
+.scale{
+    transform: scale(0.35);
+  }
+
+@media screen and (min-width:480px){
+  .scale{
+    transform: scale(0.4);
+  }
+}
+@media screen and (min-width: 750px) {
+  .scale {
+   transform: scale(0.50);
+  }
+}
+@media screen and (min-width: 1000px) {
+  .scale {
+   transform: scale(0.80);
+  }
+}
 @media print {
   * {
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
   }
 }
+
+
 @media print {
 
   body * {
@@ -23,33 +44,4 @@
     width: 100%;
   }
 
-}
-.scale{
-    transform: scale(0.3);
-  }
-
-@media screen and (min-width:480px){
-  .scale{
-    transform: scale(0.6);
-  }
-}
-@media screen and (min-width:600px){
-  .scale{
-    transform: scale(0.4);
-  }
-}
-@media screen and (min-width:750px){
-  .scale{
-    transform: scale(0.3);
-  }
-}
-@media screen and (min-width:850px){
-  .scale{
-    transform: scale(0.4);
-  }
-}
-@media screen and (min-width:1100px){
-  .scale{
-    transform: scale(0.8);
-  }
 }
