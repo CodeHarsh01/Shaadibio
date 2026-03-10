@@ -12,7 +12,7 @@ export default function page() {
       <Navbar />
       <main className='p-6 md:p-10 min-h-screen flex flex-col md:flex-row items-center justify-between'>
         <div className='w-full md:w-[50%] md:ml-6 text-center md:text-left mb-10 md:mb-0'>
-          <h1 className='text-3xl font-bold mb-2'>Create <span className='text-[#E11D48]'>Marriage Biodata Online</span><br />
+          <h1 className='text-3xl lg:text-5xl 2xl:text-7xl font-bold mb-2'>Create <span className='text-[#E11D48]'>Marriage Biodata Online</span><br />
             Free - Make Your Biodata in 2 Minutes</h1>
           <p className='text-lg text-gray-700'>Your one-stop solution for all your matrimonial needs.</p>
           <div className='mt-10 space-y-4 sm:space-y-0 sm:space-x-5 flex flex-col sm:flex-row justify-center md:justify-start'>

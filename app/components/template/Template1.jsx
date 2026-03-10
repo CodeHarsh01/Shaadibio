@@ -1,22 +1,21 @@
 import { useAuth } from '@/context/Authcontext'
 import React from 'react'
 
-function Template1({biodata, TargetRef }) {
-    const { user } = useAuth()
+function Template1({ biodata, TargetRef }) {
+  const { user } = useAuth()
+  
   return (
     <div 
-      className="flex justify-center items-start  bg-gray-100 p-4 rounded-lg"
+      className="flex justify-center items-start bg-gray-100 p-4 rounded-lg"
       style={{
         width: "794px",
         height: "1123px",
         margin: "0 auto"
       }}
     >
-
       <div 
-      className='scale'
+        className='scale'
         style={{
-          // transform: "scale(0.8)",
           transformOrigin: "top left",
           minWidth: "794px",
           minHeight: "1123px",
@@ -57,10 +56,15 @@ function Template1({biodata, TargetRef }) {
           </div>
 
           {/* Personal Details */}
-          <div className="absolute top-[285px] left-[85px] w-[450px]">
+          <div className="absolute top-[220px] left-[85px] w-[450px]">
             <h3 className="text-[26px] font-bold text-[#8B0000] mb-6">Personal Details</h3>
             <div className="grid grid-cols-[160px_20px_1fr] gap-y-2 text-[18px]">
               <span>Full Name</span> <span>:</span> <span className="font-semibold">{biodata.name || "—"}</span>
+              {/* New Fields Added Here */}
+              <span>Gender</span> <span>:</span> <span>{biodata.gender || "—"}</span>
+              <span>Marital Status</span> <span>:</span> <span>{biodata.maritalStatus || "—"}</span>
+              <span>Age</span> <span>:</span> <span>{biodata.age || "—"}</span>
+              {/* Existing Fields */}
               <span>Date of Birth</span> <span>:</span> <span>{biodata.dob || "—"}</span>
               <span>Height</span> <span>:</span> <span>{biodata.height || "—"}</span>
               <span>Place of Birth</span> <span>:</span> <span>{biodata.location || "—"}</span>
@@ -72,7 +76,7 @@ function Template1({biodata, TargetRef }) {
           </div>
 
           {/* Family Details */}
-          <div className="absolute top-[635px] left-[85px] w-[620px]">
+          <div className="absolute top-[670px] left-[85px] w-[620px]">
             <h3 className="text-[26px] font-bold text-[#8B0000] mb-6">Family Details</h3>
             <div className="grid grid-cols-[160px_20px_1fr] gap-y-2 text-[18px]">
               <span>Father's Name</span> <span>:</span> <span>{biodata.fatherName || "—"}</span>
@@ -84,7 +88,7 @@ function Template1({biodata, TargetRef }) {
           </div>
 
           {/* Contact Details */}
-          <div className="absolute top-[870px] left-[85px] w-[620px]">
+          <div className="absolute top-[910px] left-[85px] w-[620px]">
             <h3 className="text-[26px] font-bold text-[#8B0000] mb-6">Contact Details</h3>
             <div className="grid grid-cols-[160px_20px_1fr] gap-y-2 text-[18px]">
               <span>Mobile Number</span> <span>:</span> <span className="font-semibold">{biodata.mobile || "—"}</span>
