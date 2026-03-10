@@ -34,7 +34,7 @@ function Template2({ biodata, TargetRef }) {
           {/* Background Image - Template 2 with purple borders */}
           <img
             src="/assets/templates/blanktemplate-2.png"
-            className="absolute inset-0 w-full object-cover"
+            className="absolute inset-0 w-full h-full object-cover"
             alt="Template 2"
           />
 
